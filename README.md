@@ -6,7 +6,8 @@ feature. See the script for a more detailed description and usage examples.
 
 ## Example usage
 
-HE_DDNS_PASSWORD=<password> certbot certonly
+```bash
+HE_DDNS_PASSWORD="<password>" certbot certonly
     --agree-tos \
     --email=example@example.com \
     --preferred-challenges dns-01 \
@@ -14,3 +15,4 @@ HE_DDNS_PASSWORD=<password> certbot certonly
     --manual-auth-hook /path/to/certbot-he-ddns.sh \
     --manual-cleanup-hook /path/to/certbot-he-ddns.sh \
     -d example.com
+```
